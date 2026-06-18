@@ -1,0 +1,15 @@
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\bin\Debug\net10.0\ExpenseTracker.Application.deps.json
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\bin\Debug\net10.0\ExpenseTracker.Application.dll
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\bin\Debug\net10.0\ExpenseTracker.Application.pdb
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\bin\Debug\net10.0\ExpenseTracker.Domain.dll
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\bin\Debug\net10.0\ExpenseTracker.Domain.pdb
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.csproj.AssemblyReference.cache
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.AssemblyInfoInputs.cache
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.AssemblyInfo.cs
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.csproj.CoreCompileInputs.cache
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseT.086D7044.Up2Date
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.dll
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\refint\ExpenseTracker.Application.dll
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.pdb
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ref\ExpenseTracker.Application.dll
