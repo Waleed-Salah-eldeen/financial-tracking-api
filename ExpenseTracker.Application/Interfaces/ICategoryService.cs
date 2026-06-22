@@ -5,12 +5,12 @@ namespace ExpenseTracker.Application.Interfaces
 {
     public interface ICategoryService
     {
-        Task<Result<CategoryDto>> Create(CreateCategoryDto categoryDto, string userId);
-        Task<Result<IEnumerable<CategoryDto>>> GetAll(string userId);
-        Task<Result<CategoryDto>> GetById(int id, string userId);
-        Task<Result<IEnumerable<CategoryDetailsDto>>> GetAllWithExpenses(string userId);
-        Task<Result<CategoryDetailsDto>> GetWithExpenses(int id, string userId);
-        Task<Result<CategoryDto>> Update(UpdateCategoryDto categoryDto, string userId);
-        Task<Result<bool>> Remove(int id, string userId);
+        Task<Result<CategoryDto>> CreateAsync(CreateCategoryDto categoryDto, string userId);
+        Task<Result<IEnumerable<CategoryDto>>> GetAllAsync(string userId);
+        Task<Result<CategoryDto>> GetByIdAsync(int id, string userId);
+        Task<Result<IEnumerable<CategoryDetailsDto>>> GetAllWithExpensesAsync(string userId);
+        Task<Result<CategoryDetailsDto>> GetWithExpensesAsync(int id, string userId);
+        Task<Result<CategoryDto>> UpdateAsync(UpdateCategoryDto categoryDto, string userId);
+        Task<Result<bool>> RemoveAsync(int id, string userId);
     }
 }

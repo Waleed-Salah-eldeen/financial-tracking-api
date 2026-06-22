@@ -1004,7 +1004,8 @@
       },
       "ExpenseTracker.Application/1.0.0": {
         "dependencies": {
-          "ExpenseTracker.Domain": "1.0.0"
+          "ExpenseTracker.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "10.0.9"
         },
         "runtime": {
           "ExpenseTracker.Application.dll": {

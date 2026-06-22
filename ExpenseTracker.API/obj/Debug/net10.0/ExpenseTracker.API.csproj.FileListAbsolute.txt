@@ -168,3 +168,4 @@ D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.API\bin\Debug\net10.0\ru\Micr
 D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.API\obj\Debug\net10.0\ExpenseTracker.API.sourcelink.json

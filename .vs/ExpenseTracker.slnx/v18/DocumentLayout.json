@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\API\\Labs\\ExpenseTracker\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6B951E49-D54E-B281-CE93-A7A41FE2DB45}|ExpenseTracker.Application\\ExpenseTracker.Application.csproj|d:\\projects\\api\\labs\\expensetracker\\expensetracker.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B951E49-D54E-B281-CE93-A7A41FE2DB45}|ExpenseTracker.Application\\ExpenseTracker.Application.csproj|solutionrelative:expensetracker.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B951E49-D54E-B281-CE93-A7A41FE2DB45}|ExpenseTracker.Application\\ExpenseTracker.Application.csproj|d:\\projects\\api\\labs\\expensetracker\\expensetracker.application\\dtos\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B951E49-D54E-B281-CE93-A7A41FE2DB45}|ExpenseTracker.Application\\ExpenseTracker.Application.csproj|solutionrelative:expensetracker.application\\dtos\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B951E49-D54E-B281-CE93-A7A41FE2DB45}|ExpenseTracker.Application\\ExpenseTracker.Application.csproj|d:\\projects\\api\\labs\\expensetracker\\expensetracker.application\\dtos\\categories\\categorydetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B951E49-D54E-B281-CE93-A7A41FE2DB45}|ExpenseTracker.Application\\ExpenseTracker.Application.csproj|solutionrelative:expensetracker.application\\dtos\\categories\\categorydetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,43 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryDto.cs",
-              "DocumentMoniker": "D:\\Projects\\API\\Labs\\ExpenseTracker\\ExpenseTracker.Application\\DTOs\\Categories\\CategoryDto.cs",
-              "RelativeDocumentMoniker": "ExpenseTracker.Application\\DTOs\\Categories\\CategoryDto.cs",
-              "ToolTip": "D:\\Projects\\API\\Labs\\ExpenseTracker\\ExpenseTracker.Application\\DTOs\\Categories\\CategoryDto.cs",
-              "RelativeToolTip": "ExpenseTracker.Application\\DTOs\\Categories\\CategoryDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T17:33:28.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryDetailsDto.cs",
-              "DocumentMoniker": "D:\\Projects\\API\\Labs\\ExpenseTracker\\ExpenseTracker.Application\\DTOs\\Categories\\CategoryDetailsDto.cs",
-              "RelativeDocumentMoniker": "ExpenseTracker.Application\\DTOs\\Categories\\CategoryDetailsDto.cs",
-              "ToolTip": "D:\\Projects\\API\\Labs\\ExpenseTracker\\ExpenseTracker.Application\\DTOs\\Categories\\CategoryDetailsDto.cs",
-              "RelativeToolTip": "ExpenseTracker.Application\\DTOs\\Categories\\CategoryDetailsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T16:22:52.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\Projects\\API\\Labs\\ExpenseTracker\\ExpenseTracker.Application\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "ExpenseTracker.Application\\Services\\CategoryService.cs",
-              "ToolTip": "D:\\Projects\\API\\Labs\\ExpenseTracker\\ExpenseTracker.Application\\Services\\CategoryService.cs",
-              "RelativeToolTip": "ExpenseTracker.Application\\Services\\CategoryService.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAADwv7kAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T12:38:21.94Z",
-              "EditorCaption": ""
             }
           ]
         },

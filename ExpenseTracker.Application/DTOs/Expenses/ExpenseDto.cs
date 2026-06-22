@@ -11,6 +11,7 @@ namespace ExpenseTracker.Application.DTOs.Expenses
         public decimal Amount { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedAt { get; set; }
+        public int CategoryId { get; set; }
         public string? CategoryName { get; set; }
     }
 }

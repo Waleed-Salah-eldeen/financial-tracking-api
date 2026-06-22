@@ -3,8 +3,9 @@ namespace ExpenseTracker.Application.DTOs.Categories
 {
     public class UpdateCategoryDto
     {
-        [Required]
-        public int Id { get; set; }
+        [Required(ErrorMessage = "Category id is required.")]
+        [Range(1, int.MaxValue, ErrorMessage ="Enter A Valid Category id")]
+        public int? Id { get; set; }
 
         [Required(ErrorMessage = "Category name is required.")]
         [MinLength(3, ErrorMessage = "Category name must be at least 3 characters.")]

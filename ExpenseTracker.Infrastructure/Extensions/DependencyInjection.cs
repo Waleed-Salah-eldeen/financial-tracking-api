@@ -1,4 +1,5 @@
 ﻿using ExpenseTracker.Application.Interfaces;
+using ExpenseTracker.Application.Services;
 using ExpenseTracker.Infrastructure.Identity;
 using ExpenseTracker.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -61,6 +62,7 @@ namespace ExpenseTracker.Infrastructure.Extensions
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<JwtProvider>();
+            services.AddScoped<ICategoryService, CategoryService>();
             return services;
         }
     }

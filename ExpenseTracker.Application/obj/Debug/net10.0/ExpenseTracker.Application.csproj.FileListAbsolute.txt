@@ -13,3 +13,4 @@ D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0
 D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\refint\ExpenseTracker.Application.dll
 D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.pdb
 D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ref\ExpenseTracker.Application.dll
+D:\Projects\API\Labs\ExpenseTracker\ExpenseTracker.Application\obj\Debug\net10.0\ExpenseTracker.Application.sourcelink.json
