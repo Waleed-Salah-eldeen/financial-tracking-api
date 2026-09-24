@@ -4,18 +4,21 @@ namespace ExpenseTracker.Application.DTOs.Expenses
 {
     public class UpdateExpenseDto
     {
-        [Required]
-        public int Id { get; set; }
+        [Required(ErrorMessage = "Expense ID is required")]
+        [Range(1, int.MaxValue, ErrorMessage = "Please enter a valid Expense ID")]
+        public int? Id { get; set; }
 
         [Required(ErrorMessage = "Expense description is required")]
         [MinLength(3, ErrorMessage = "Description must be at least 3 characters")]
-        [MaxLength(300, ErrorMessage = "Description cannot exceed 50 characters")]
+        [MaxLength(100, ErrorMessage = "Description cannot exceed 100 characters")]
         public string Description { get; set; } = null!;
 
-        [Range(0.01, double.MaxValue, ErrorMessage = "Amount must be greater than zero")]
-        public decimal Amount { get; set; }
+        [Required(ErrorMessage = "Amount is required")]
+        [Range(0.01, (double)decimal.MaxValue, ErrorMessage = "Amount must be greater than zero")]
+        public decimal? Amount { get; set; }
 
-        [Range(1, int.MaxValue, ErrorMessage = "Please select a category")]
-        public int CategoryId { get; set; }
+        [Required(ErrorMessage = "Category ID is required")]
+        [Range(1, int.MaxValue, ErrorMessage = "Please select a valid category")]
+        public int? CategoryId { get; set; }
     }
 }

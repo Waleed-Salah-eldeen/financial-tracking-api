@@ -63,6 +63,7 @@ namespace ExpenseTracker.Infrastructure.Extensions
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<JwtProvider>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IExpenseService, ExpenseService>();
             return services;
         }
     }

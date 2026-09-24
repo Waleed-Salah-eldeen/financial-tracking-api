@@ -3,7 +3,6 @@ using ExpenseTracker.Domain.Entities;
 using ExpenseTracker.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace ExpenseTracker.Infrastructure.Persistence
 {

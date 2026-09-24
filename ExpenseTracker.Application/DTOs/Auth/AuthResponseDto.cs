@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ExpenseTracker.Application.DTOs.Auth
+﻿namespace ExpenseTracker.Application.DTOs.Auth
 {
     public class AuthResponseDto
     {
