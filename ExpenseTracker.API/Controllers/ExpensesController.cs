@@ -20,10 +20,12 @@ namespace ExpenseTracker.API.Controllers
         }
 
         [HttpGet("all")]
-        public async Task<IActionResult> GetAllAsync()
+        public async Task<IActionResult> GetAllAsync(
+            [FromQuery] int pageNumber = 1, 
+            [FromQuery] int pageSize = 10)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
-            var result = await _expenseService.GetAllAsync(userId);
+            var result = await _expenseService.GetAllAsync(userId, pageNumber, pageSize);
 
             if (!result.IsSuccess)
                 return HandleFailure(result);

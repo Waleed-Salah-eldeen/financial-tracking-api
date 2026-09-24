@@ -16,11 +16,13 @@ namespace ExpenseTracker.Application.Services
             _context = context;
         }
 
-        public async Task<Result<IEnumerable<ExpenseDto>>> GetAllAsync(string userId)
+        public async Task<Result<IEnumerable<ExpenseDto>>> GetAllAsync(string userId, int pageNumber = 1, int pageSize = 10)
         {
             var expenses = await _context.Set<Expense>()
                 .AsNoTracking()
                 .Where(e => e.ApplicationUserId == userId && !e.IsDeleted)
+                .OrderByDescending(e => e.CreatedAt)
+                .Paginate(pageNumber, pageSize) 
                 .Select(ToExpenseDto)
                 .ToListAsync();
 

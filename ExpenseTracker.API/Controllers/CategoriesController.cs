@@ -18,10 +18,12 @@ namespace ExpenseTracker.API.Controllers
         }
 
         [HttpGet("all")]
-        public async Task<IActionResult> GetAllAsync()
+        public async Task<IActionResult> GetAllAsync(
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 10)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
-            var result = await _categoryService.GetAllAsync(userId);
+            var result = await _categoryService.GetAllAsync(userId, pageNumber, pageSize);
 
             if (!result.IsSuccess)
                 return HandleFailure(result);
@@ -30,10 +32,12 @@ namespace ExpenseTracker.API.Controllers
         }
 
         [HttpGet("allWithExpenses")]
-        public async Task<IActionResult> GetAllWithExpensesAsync()
+        public async Task<IActionResult> GetAllWithExpensesAsync(
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 10)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
-            var result = await _categoryService.GetAllWithExpensesAsync(userId);
+            var result = await _categoryService.GetAllWithExpensesAsync(userId, pageNumber, pageSize);
 
             if (!result.IsSuccess)
                 return HandleFailure(result);
@@ -72,7 +76,7 @@ namespace ExpenseTracker.API.Controllers
             return CreatedAtAction(nameof(GetByIdAsync).Replace("Async", ""), new { id = result.Data!.Id }, result.Data);
         }
 
-        [HttpPost("Edit")]
+        [HttpPut]
         public async Task<IActionResult> UpdateAsync(UpdateCategoryDto updateCategoryDto)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;

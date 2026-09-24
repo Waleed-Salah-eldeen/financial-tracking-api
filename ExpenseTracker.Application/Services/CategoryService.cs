@@ -40,26 +40,27 @@ namespace ExpenseTracker.Application.Services
             return Result<CategoryDto>.Success(categoryDto);
         }
 
-        public async Task<Result<IEnumerable<CategoryDto>>> GetAllAsync(string userId)
+        public async Task<Result<IEnumerable<CategoryDto>>> GetAllAsync(string userId, int pageNumber = 1, int pageSize = 10)
         {
-            var categories = await _context.Set<Category>().AsNoTracking().Where(c => c.ApplicationUserId == userId && !c.IsDeleted)
-                                                           .Select(ToCategoryDto).ToListAsync();
-
-            if (!categories.Any())
-                return Result<IEnumerable<CategoryDto>>.Failure("This user has no categories", ErrorType.NotFound);
+            var categories = await _context.Set<Category>()
+                .AsNoTracking()
+                .Where(c => c.ApplicationUserId == userId && !c.IsDeleted)
+                .Paginate(pageNumber, pageSize)
+                .Select(ToCategoryDto)
+                .ToListAsync();
 
             return Result<IEnumerable<CategoryDto>>.Success(categories);
 
         }
 
-        public async Task<Result<IEnumerable<CategoryDetailsDto>>> GetAllWithExpensesAsync(string userId)
+        public async Task<Result<IEnumerable<CategoryDetailsDto>>> GetAllWithExpensesAsync(string userId, int pageNumber = 1, int pageSize = 10)
         {
-            var result = await _context.Set<Category>().AsNoTracking()
-                                                     .Where(c => c.ApplicationUserId == userId && !c.IsDeleted)
-                                                     .Select(ToCategoryDetails).ToListAsync();
-
-            if (!result.Any())
-                return Result<IEnumerable<CategoryDetailsDto>>.Failure("This user has no categories", ErrorType.NotFound);
+            var result = await _context.Set<Category>()
+                .AsNoTracking()
+                .Where(c => c.ApplicationUserId == userId && !c.IsDeleted)
+                .Paginate(pageNumber, pageSize)
+                .Select(ToCategoryDetails)
+                .ToListAsync();
 
             return Result<IEnumerable<CategoryDetailsDto>>.Success(result);
         }
